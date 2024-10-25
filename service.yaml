@@ -10,5 +10,5 @@ spec:
     app: fastapi-app
   ports:
   - port: 8000
-    targetPort: web
+    targetPort: 8080
     name: web
