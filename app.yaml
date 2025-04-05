@@ -7,10 +7,10 @@ spec:
   project: default
   source:
     repoURL: git@github.com:rmsantis/application-monitoring-prometheus.git
-    path: 
+    path: k8s 
     targetRevision: main
   destination:
-    namespace: monitoring
+    namespace: app-prometheus
     server: https://kubernetes.default.svc
   syncPolicy:
     automated: 
