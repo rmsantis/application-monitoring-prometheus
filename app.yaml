@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-prometheus
+  name: fast-api
   namespace: argocd
 spec:
   project: default
@@ -10,7 +10,7 @@ spec:
     path: k8s 
     targetRevision: main
   destination:
-    namespace: app-prometheus
+    namespace: fast-api
     server: https://kubernetes.default.svc
   syncPolicy:
     automated: 
